@@ -3,6 +3,6 @@ class CharDemo{
 		char ch;
 		ch='97';
 		System.out.println("char="+ch);
-		System.out.println("char="+ ch+1);
+		System.out.println("char="+ch+1);
 	}
 }
