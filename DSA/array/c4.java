@@ -1,15 +1,15 @@
 class ArrayDemo{
 	static int CountArray(int arr[],int k){
 		int count=0;
-		for(int i=0;i<arr.length;i++){
-			for(int j=0;j<arr.length;j++){
-				if(arr[i]!=arr[j] && arr[i]+arr[j]==k){
+		for(int i=0;i<arr.length-1;i++){
+			for(int j=i+1;j<arr.length;j++){
+				if(i!=j && arr[i]+arr[j]==k){
 					count++;
 
 				}
 			}
 		}
-		return count;
+		return count*2;
 	}
 
 	public static void main(String[] args){
